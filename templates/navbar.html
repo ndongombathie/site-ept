@@ -1,7 +1,7 @@
  <div class="navbar">
         <div>
             {% load static %}
-            <img src="{% static "images/image.png" %}" alt="Logo de l'école">
+            <img src="{% static 'images/image.png' %}" alt="Logo de l'école">
         </div>
         <input type="text" class="search" placeholder="Rechercher">
         <nav>
@@ -14,7 +14,7 @@
                 <li class="nav-items">
                      <div>
                         <a href="">Départements
-                            <img class="chevron" src="{% static "images/chevron-en-bas.png" %}" alt="" srcset="">
+                            <img class="chevron" src="{% static 'images/chevron-en-bas.png' %}" alt="" srcset="">
                         </a>
                     </div>
                      <ul class="ul-items">
@@ -25,7 +25,7 @@
                             <a href="">Génie civil</a>
                         </li>
                         <li class="li-ul-items">
-                            <a href="">Génie informatique et telecoms</a>
+                            <a href="{% url 'git' %}">Génie informatique et telecoms</a>
                         </li>
                         <li class="li-ul-items">
                             <a href="">Génie aéronautique</a>
@@ -49,8 +49,8 @@
                 <li class="nav-items">
                      <div>
                         <a href="">
-                            <img class="chevron" src="{% static "images/internet.png" %}" alt="" srcset="">
-                            <img class="chevron" src="{% static "images/chevron-en-bas.png" %}" alt="" srcset="">
+                            <img class="chevron" src="{% static 'images/internet.png' %}" alt="" srcset="">
+                            <img class="chevron" src="{% static 'images/chevron-en-bas.png' %}" alt="" srcset="">
 
                         </a>
                     </div>

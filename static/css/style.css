@@ -693,3 +693,31 @@ input.search{
         font-size: 35px;
     }
 }
+
+
+.drapeau{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+ 
+.drapeau div{
+    width: 100%;
+    height: 100%;
+}
+
+.first{
+    background-color: green;
+}
+
+.second{
+    background-color: yellow;
+}
+
+.last{
+    background-color: red;
+}
+

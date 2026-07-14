@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from apps.home.views import home,contact,inscription,connexion
 from django.urls import include
+from apps.departements import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home,name="home"),
     path("contact/",contact,name="contact"),
     path("inscription/",inscription,name="inscription"),
-    path("connexion",connexion,name="connexion")
+    path("connexion",connexion,name="connexion"),
+    path("departements/",include(url))
 ]

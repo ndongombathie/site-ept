@@ -1,0 +1,76 @@
+
+{% extends "index.html" %}
+{% block content %}
+{% load static %}
+
+<div class="contact-container">
+    <div class="contact-item">
+        <h2 class="contact-title">
+            contact
+        </h2>
+        <div>
+            <p>
+                 Mail : ept@ept.sn
+            </p>
+            <p>
+                Postal : BP A10 ,Thiès, Sénégal
+            </p>
+            <p>
+                Téléphone : 00221 33 951 15 48
+            </p>
+            <p>
+                Fax : 00221 33 951 14 16
+            </p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <h2 class="contact-title">
+            Accés
+        </h2>
+        <div>
+            <p>
+                {% lorem 2 b random %}
+            </p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <h2 class="contact-title">
+            Localisation
+        </h2>
+        <div class="">
+            <p>
+                 Iténéraire depuis aéroport Lèopold Sédar Senghor
+            </p>
+            <div class="location-container">
+                <div>
+                        <img src="{% static "images/StaticMapService.png" %}" alt="" srcset="" class="image-localisation">
+
+                </div>
+                <div class="form-location">
+                    <p>
+                       Iténéraire depuis aéroport Lèopold Sédar Senghor 
+                       pariatur accusantium quas perferendis aperiam voluptates 
+                    </p>
+                    <form class="form-location-item">
+                        <div>
+                                <label for="adresse">Adresse :</label> <br/>
+                                <input type="text" placeholder="Entrer votre adresse">
+                        </div>
+                        <div>
+                                <label for="adresse">BP :</label> <br/>
+                                <input type="text" placeholder="Entrer votre BP">
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Rechercher">
+                        </div>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

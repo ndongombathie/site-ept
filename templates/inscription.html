@@ -1,0 +1,67 @@
+{% load static %}
+<div class="inscriptions" id="modal">
+    <h1 class="title-form">Créer un compte utilisateur</h1>
+    <form class="inscriptions-form">
+        <div class="form-group-all">
+            <div class="form-group">
+                <div class="prenom-nom">
+                    <label for="prenom">Prénom et Nom:</label><br />
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrer votre prénom">
+                    <input type="text" id="nom" name="nom" placeholder="Entrer votre nom">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email :</label><br />
+                    <input type="email" id="email" name="email" placeholder="Entrer votre email">
+                </div>
+
+                <div class="departement">
+                    <label for="departement">Département :</label><br />
+                    <select name="departement" id="departement">
+                        <option value="">Sélectionner votre département</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="niveau">
+                    <label for="niveau">Niveau :</label><br />
+                    <select name="niveau" id="niveau">
+                        <option value="">Sélectionner votre niveau</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="date_naissance">
+                    <label for="date_naissance">Date de naissance :</label><br />
+                    <input type="date" id="date_naissance" name="date_naissance">
+                    <select name="lieu_naissance" id="lieu_naissance">
+                        <option value="">Sélectionner votre lieu de naissance</option>
+                    </select>
+                </div>
+
+                <div class="captcha">
+                    <label for="captcha">Captcha :</label><br />
+                    <input type="text" id="captcha" name="captcha" placeholder="Entrer votre captcha">
+                </div>
+
+                <div class="code">
+                    <label for="code">Code :</label><br />
+                    <input type="text" id="code" name="code" placeholder="Entrer le code">
+                </div>
+            </div>
+        </div>
+
+        <div class="conditions">
+            <input type="checkbox" id="condition" name="condition">
+            <label for="condition">J'ai lu et j'accepté la politique de confidentialité 
+                et les <a href="{% url 'home' %}"> conditions généales d'utilisation</a>.
+            </label>
+        </div>
+
+        <div class="btn-container">
+            <button type="submit" class="submit-btn">Valider</button>
+        </div>
+    </form>
+</div>

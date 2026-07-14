@@ -1,0 +1,80 @@
+ <div class="navbar">
+        <div>
+            {% load static %}
+            <img src="{% static "images/image.png" %}" alt="Logo de l'école">
+        </div>
+        <input type="text" class="search" placeholder="Rechercher">
+        <nav>
+            <ul class="navbar-item">
+                <li class="nav-items">
+                     <div>
+                        <a href="{% url 'home' %}">Accueil</a>
+                    </div>
+                </li>
+                <li class="nav-items">
+                     <div>
+                        <a href="">Départements
+                            <img class="chevron" src="{% static "images/chevron-en-bas.png" %}" alt="" srcset="">
+                        </a>
+                    </div>
+                     <ul class="ul-items">
+                        <li class="li-ul-items">
+                            <a href="">Génie éléctromécanique</a>
+                        </li>
+                        <li class="li-ul-items">
+                            <a href="">Génie civil</a>
+                        </li>
+                        <li class="li-ul-items">
+                            <a href="">Génie informatique et telecoms</a>
+                        </li>
+                        <li class="li-ul-items">
+                            <a href="">Génie aéronautique</a>
+                        </li>
+                   </ul>
+                    
+                </li>
+                <li class="nav-items">
+                     <div>
+                        <a href="">Administration</a>
+                    </div>
+                </li>
+                <li class="nav-items">
+                     <div>
+                        <a href="{% url 'contact' %}">Contacts</a>
+                    </div>
+                </li>
+                <li class="nav-items"><a href="">A propos</a>
+                    
+                </li>
+                <li class="nav-items">
+                     <div>
+                        <a href="">
+                            <img class="chevron" src="{% static "images/internet.png" %}" alt="" srcset="">
+                            <img class="chevron" src="{% static "images/chevron-en-bas.png" %}" alt="" srcset="">
+
+                        </a>
+                    </div>
+                     <ul class="ul-items">
+                        <li class="li-ul-items">
+                            <a href="">FR</a>
+                        </li>
+                        <li class="li-ul-items">
+                            <a href="">ENG</a>
+                        </li>
+                        <li class="li-ul-items">
+                            <a href="">GB</a>
+                        </li>
+                   </ul>
+                </li>
+                <li class="login">
+                     <div class="login-btn">
+                        <button  class="connecter">Connexion</button>
+                    </div>
+                    <div class="login-btn">
+                        <button class="inscription" id="inscription">Inscription</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    {% include "inscription.html" %}

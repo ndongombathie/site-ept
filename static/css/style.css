@@ -242,12 +242,59 @@ li{
 .inscriptions-form input[type="text"],input[type="date"],input[type="email"],select{
     display: flex;
     border:2px solid orange;
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 10px;
+}
+.inscriptions-form{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.login-connexion{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    z-index: 100;
+    box-shadow: 6px 6px 6px black;
+}
+
+
+.connexion-form{
+    width: 300px;
+    margin: auto;
+}
+
+
+.login-connexion input[type="password"],input[type="email"]{
+    display: flex;
+    border:2px solid orange;
     width: 90%;
     height: 35px;
     margin-top: 10px;
     border-radius: 5px;
     background-color: white;
     padding-left: 10px;
+    
+}
+
+.submit-btn-connexion{
+    width: 50%;
+    height: 40px;
+    padding:10px;
+    border-radius: 5px;
+    font-size: 18px;
+    border:1px orange solid;
+    background-color: orange;
 }
 
 

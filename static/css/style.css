@@ -201,10 +201,13 @@ li{
 
 .inscriptions{
     display: none;
-    position: absolute;
-    top: 200px;
-    left: 500px;
-    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* ou absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: auto;
     height: 520px;
     background-color: white;
@@ -235,7 +238,7 @@ li{
 }
 
 .form-group-all{
-    display: flex;
+    display: flex;      
     flex-direction: row;
     justify-content: space-between;
 }
@@ -255,16 +258,18 @@ li{
     margin-right: 10px;
 }
 
-.login-connexion{
+.login-connexion {
     display: none;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     width: 400px;
-    margin: auto;
+    height: 450px;
     background-color: white;
-    position: absolute;
-    top: 200px;
-    left: 800px;
+    position: fixed; /* ou absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 100;
     box-shadow: 6px 6px 6px black;
 }

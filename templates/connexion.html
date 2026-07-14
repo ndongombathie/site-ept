@@ -1,21 +1,24 @@
 <div class="login-connexion">
     <div class="connexion-form">
         <h1>Connexion</h1>
-        <div class="email">
-            <label for="email">Email :</label><br />
-            <input type="email" id="email" name="email" placeholder="Entrer votre email">
-        </div>
-        <div class="password">
-            <label for="password">Password :</label><br />
-            <input type="password" id="password" name="password" placeholder="Entrer votre password">
-        </div>
-        <div>
-            <input type="checkbox" id="condition" name="condition">
-            <label for="condition">Se souvenir de moi</label>
-        </div>
-        <div class="btn-container">
-                <button type="submit" class="submit-btn-connexion">Se connecter</button>
-        </div>
+        <form action="{% url 'connexion' %}" method="post">
+            {% csrf_token %}
+            <div class="email">
+                <label for="email">Email :</label><br />
+                <input type="email" id="email" name="email" placeholder="Entrer votre email">
+            </div>
+            <div class="password">
+                <label for="password">Password :</label><br />
+                <input type="password" id="password" name="password" placeholder="Entrer votre password">
+            </div>
+            <div>
+                <input type="checkbox" id="condition" name="condition">
+                <label for="condition">Se souvenir de moi</label>
+            </div>
+            <div class="btn-container">
+                    <button type="submit" class="submit-btn-connexion">Se connecter</button>
+            </div>
+        </form>
         <p>
             <a href="{% url 'home' %}">Mot de passe oublié ?</a>
         </p>

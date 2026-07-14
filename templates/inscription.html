@@ -1,7 +1,8 @@
 {% load static %}
 <div class="inscriptions" id="modal">
     <h1 class="title-form">Créer un compte utilisateur</h1>
-    <form class="inscriptions-form">
+    <form class="inscriptions-form" action="{% url 'inscription' %}" method="post">
+        {% csrf_token %}
         <div class="form-group-all">
             <div class="form-group">
                 <div class="prenom-nom">

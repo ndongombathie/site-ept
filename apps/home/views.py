@@ -10,4 +10,9 @@ def contact(request):
     return render(request,'contact.html')
 
 def inscription(request):
-    return render(request,'inscription.html')
+    print(request.POST)
+    return render(request,'index.html')
+
+
+def connexion(request):
+    return render(request,'index.html')

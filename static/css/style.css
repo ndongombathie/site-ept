@@ -127,8 +127,6 @@ li{
 
 .section{
     background-image: url("../images/background.png");
-    /* rendre l'image floue */
-    
     background-repeat: no-repeat;
     background-size: cover;
     height: 685px;
@@ -137,6 +135,7 @@ li{
 .section h1{
     font-size: 70px;
 }
+
 /* contact */
 .contact-container{
     width: 95%;
@@ -204,7 +203,7 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed; /* ou absolute */
+    position: fixed; /
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -266,7 +265,7 @@ li{
     width: 400px;
     height: 450px;
     background-color: white;
-    position: fixed; /* ou absolute */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

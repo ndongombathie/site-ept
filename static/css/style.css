@@ -224,6 +224,7 @@ li{
     font-size: 18px;
     border:1px orange solid;
     background-color: orange;
+    color:white;
 }
 
 .btn-container{
@@ -269,6 +270,7 @@ li{
 }
 
 
+
 .connexion-form{
     width: 300px;
     margin: auto;
@@ -295,6 +297,7 @@ li{
     font-size: 18px;
     border:1px orange solid;
     background-color: orange;
+    color: white;
 }
 
 

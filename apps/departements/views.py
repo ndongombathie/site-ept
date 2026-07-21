@@ -2,9 +2,24 @@ from django.shortcuts import render
 
 # Create your views here.
 
+departement=[
+    {"nom":"departement genie informatique",
+     "diplome":False,
+     "listeClass":[
+         {"nom":"Fatou","prenom":"Camara"},
+         {"nom":"Fatou","prenom":"Camara"},
+         {"nom":"Fatou","prenom":"Camara"},
+         {"nom":"Fatou","prenom":"Camara"},
+         {"nom":"Fatou","prenom":"Camara"},
+      ]
+    }
+]
 
 def git(request):
-    return render(request,"git.html")
+    context={}
+    context = departement[0]
+    print(context)
+    return render(request,"git.html",context=context)
 
 def gem(request):
     return render(request,"gem.html")

@@ -1,6 +1,9 @@
  <div class="navbar">
-        <div>
+        <div class="all-photo">
             {% load static %}
+            <a href=" {% url 'profil' %}"> 
+                <img src="{% static 'images/profil.jpeg' %}" alt="Logo de l'école" class="haut-profil">
+            </a>
             <img src="{% static 'images/image.png' %}" alt="Logo de l'école">
         </div>
         <input type="text" class="search" placeholder="Rechercher">
@@ -68,7 +71,9 @@
                 </li>
                 <li class="login">
                      <div class="login-btn">
-                        <button  class="connecter" id="connexion">Connexion</button>
+                        <button  class="connecter" id="connexion">
+                            <a href="{% url 'connexion' %}">Connexion</a>
+                        </button>
                     </div>
                     <div class="login-btn">
                         <button class="inscription" id="inscription">Inscription</button>
@@ -78,4 +83,3 @@
         </nav>
     </div>
     {% include "inscription.html" %}
-    {% include "connexion.html" %}

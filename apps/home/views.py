@@ -16,4 +16,4 @@ def inscription(request):
 
 def connexion(request):
     print(request.POST)
-    return render(request,'index.html')
+    return render(request,'connexion.html')

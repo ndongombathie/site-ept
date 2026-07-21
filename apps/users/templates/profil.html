@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}votre profil{% endblock title %}
+
+{% block content %}
+  <div class="all">
+    <div class="images">
+       <img src="{% static 'images/profil.jpeg' %}" alt="" class="profil">
+    </div>
+    <div class="infos">
+        {% if connected %}
+        <h2>Votre profil</h2>
+        <ul>
+            <li>Nom : {{nom}}</li>
+            <li>Prenom : {{prenom}}</li>
+            <li>Ecole : {{ecole}}</li>
+            <li>Pays residentiel : {{pays}}</li>
+            <li>Nationalité : {{nationalite}}</li>
+        </ul>
+
+        {% else %}
+          <h3>Vous n'êtes pas connecté</h3>
+          <a class="connecter-btn" href="{% url 'connexion' %}">Se connecter</a>
+        {% endif %}
+    </div>
+  </div>
+{% endblock content %}

@@ -2,6 +2,21 @@
 {% block title %}le departement git{% endblock title %}
 {% block content %}
 {% load static %}
+ <div class="departemnt">
+    {% if diplome %}
+       il y'a des promos sortant 
+    {% else %}
+    la liste du premier promo
+    <ul>
+        {% for etudiant in listeClass %}
+     
+        <li>{{etudiant.nom}} {{etudiant.prenom}}</li>
 
+         {% endfor %}
+    </ul>
+
+    {% endif %}
+
+ </div>
 <img class="dep" src="{% static 'images/informatique.png' %}"/>
 {% endblock content %}

@@ -18,13 +18,15 @@ from django.contrib import admin
 from django.urls import path
 from apps.home.views import home,contact,inscription,connexion
 from django.urls import include
-from apps.departements import url
+from apps.departements import url as url_dept
+from apps.users import urls as urls_users
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home,name="home"),
     path("contact/",contact,name="contact"),
     path("inscription/",inscription,name="inscription"),
-    path("connexion",connexion,name="connexion"),
-    path("departements/",include(url))
+    path("connexion/",connexion,name="connexion"),
+    path("departements/",include(url_dept)),
+    path("users/",include(urls_users)),
 ]

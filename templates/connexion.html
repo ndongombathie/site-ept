@@ -1,6 +1,10 @@
+{% extends "index.html" %}
+{% block title %}Connexion{% endblock title %}
+{% load static %}
+{% block content %}
 <div class="login-connexion">
     <div class="connexion-form">
-        <h1>Connexion</h1>
+        <h1 class="title-connexion">Connexion</h1>
         <form action="{% url 'connexion' %}" method="post">
             {% csrf_token %}
             <div class="email">
@@ -24,3 +28,5 @@
         </p>
     </div>
 </div>
+
+{% endblock content %}
